@@ -1,0 +1,112 @@
+:root {
+  --background: hsl(210, 100%, 97%);
+  --foreground: hsl(339, 20%, 20%);
+  --primary: hsl(308, 56%, 85%);
+  --primary-foreground: hsl(210, 22%, 22%);
+  --secondary: hsl(196, 75%, 88%);
+  --secondary-foreground: hsl(210, 22%, 22%);
+  --accent: hsl(211, 86%, 70%);
+  --accent-foreground: hsl(210, 22%, 22%);
+  --destructive: hsl(0, 93%, 73%);
+  --destructive-foreground: hsl(210, 22%, 22%);
+  --muted: hsl(210, 100%, 95%);
+  --muted-foreground: hsl(210, 22%, 22%);
+  --card: hsl(210, 100%, 97%);
+  --card-foreground: hsl(210, 22%, 22%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(341, 20%, 22%);
+  --border: hsl(210, 40%, 80%);
+  --input: hsl(210, 40%, 56%);
+  --ring: hsl(210, 40%, 60%);
+  --radius: 1rem;
+}
+
+* {
+  border-color: var(--border);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Manrope', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Manrope', sans-serif;
+}
+
+.card {
+    width: 100%;
+    max-width: 28rem;
+    margin: 0 auto;
+    border-radius: var(--radius);
+    background-color: var(--card);
+    color: var(--card-foreground);
+    padding: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-header {
+    margin-bottom: 1rem;
+  }
+  
+  .card-title {
+    font-size: 2.25rem;
+    font-weight: 600;
+  }
+  
+  .card-description {
+    color: var(--muted-foreground);
+    font-size: 1rem;
+    margin-left: 0.2rem;
+  }
+  
+  .card-content {
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  .errors {
+    color: red;
+    font-size: 0.8rem;
+  }
+
+  .field {
+    margin-bottom: 1rem;
+  }
+  
+  .label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .input, .select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background-color: var(--card);
+    color: var(--foreground);
+  }
+  
+  .btn-primary {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+    border: none;
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 6rem;
+  }
+
+  
